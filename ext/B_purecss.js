@@ -1,4 +1,8 @@
 B(window).on('load',function() {
+  // Handle PureCSS menu/submenu
+  // It currently expects:
+  //  * menu needs class .menu-with-dropdown
+  //  * submenu to have the .submenu class.
   B('.menu-with-dropdown').on('click',function(){
     var B_t = B(this),
         B_sub = B(B_t.firstChild('.submenu'));
